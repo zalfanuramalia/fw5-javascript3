@@ -15,11 +15,11 @@ const cekHariKerja = (day) => {
     })
 }
 
-//cekHariKerja('rabu').then((cek)=>{
-//    console.log("Hari " + cek + " adalah hari kerja")
-//}).catch((err)=>{
-//    console.log(""+ err + "" )
-//})
+cekHariKerja('rabu').then((cek)=>{
+    console.log("Hari " + cek + " adalah hari kerja")
+}).catch((err)=>{
+    console.log(""+ err + "" )
+})
 
 async function proses(){
     try{
