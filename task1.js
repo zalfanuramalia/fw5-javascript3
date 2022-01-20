@@ -15,7 +15,7 @@ const cekHariKerja = (day) => {
     })
 }
 
-cekHariKerja('rabu').then((cek)=>{
+cekHariKerja('kamis').then((cek)=>{
     console.log("Hari " + cek + " adalah hari kerja")
 }).catch((err)=>{
     console.log(""+ err + "" )
