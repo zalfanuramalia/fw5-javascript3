@@ -1,8 +1,8 @@
 //Program 1
 
-let ditepati = true;
+let ditepati = false;
 const janji1 = new Promise((resolve, reject) => {
-  if ( ditepati) {
+  if (ditepati) {
     setTimeout (()=> {
       resolve ("Janji telah ditepati");
     }, 2000)
@@ -19,26 +19,27 @@ janji1.then((item) => {
 
 //Program 2
 
-function promise() {
-  return new Promise ((resolve, reject) => {
-    const time = 6000
-    if (time < 5000 ){
-      setTimeout((cek)=>{
-        resolve(cek)
-      }, time);
-    } else {
-      reject ("Kelamaan!")
-    }
-  })
-}
+// function promise(time) {
+//   return new Promise ((resolve, reject) => {
+//     setTimeout(()=>{
+//       if (time < 5000 ){
+//         setTimeout((cek)=>{
+//           resolve(cek)
+//         }, time);
+//       } else {
+//         reject ("Kelamaan!")
+//       }
+//     },time) 
+//   })
+// }
 
-async function janji(){
-  try {
-    const coba = await promise();
-    console.log("selesai!");
-  } catch (err) {
-    console.log(err);
-  }
-}
+// async function janji(){
+//   try {
+//     const coba = await promise(3000);
+//     console.log("selesai!");
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
 
-janji()
+// janji()
