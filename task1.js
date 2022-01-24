@@ -15,15 +15,18 @@ const cekHariKerja = (day) => {
     })
 }
 
+// Menggunakan then and catch
 cekHariKerja('kamis').then((cek)=>{
     console.log("Hari " + cek + " adalah hari kerja")
 }).catch((err)=>{
     console.log(""+ err + "" )
 })
 
+
+//Menggunakan try and catch
 async function proses(){
     try{
-        const result = await cekHariKerja('minggu')
+        const result = await cekHariKerja('senin')
         console.log("Hari " + result + " adalah hari kerja")
     }catch(err){
         console.log(""+err)
