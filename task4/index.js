@@ -2,6 +2,7 @@ const fetch = require ("cross-fetch")
 
 const url = "https://jsonplaceholder.typicode.com/users"
 
+//Menggunakan async await
 async function listName(){
     const data = await fetch(url)
     const res = await data.json()
@@ -12,6 +13,7 @@ async function listName(){
 
 listName()
 
+//Menggunakan then catch
 fetch(url).then(res =>{
     res.json().then(fin => {
         fin.forEach(item => {
